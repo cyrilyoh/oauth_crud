@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="bg-black">
+    <head>
+        <meta charset="UTF-8">
+        <title>OAuth CRUD</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        <!-- bootstrap 3.0.2 -->
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+        <!-- font Awesome -->
+        <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />
+        <!-- Theme style -->
+        <link href="{% static 'css/AdminLTE.css' %}" rel="stylesheet" type="text/css" />
+
+    </head>
+    <body class="bg-black">
+        <div class="form-box" id="login-box">
+            <div class="header">OAuth CRUD</div>
+                <div class="body bg-gray">                                                             
+                    <a href="{% url 'social:begin' 'github' %}" class="btn bg-olive btn-block">Log In With GitHub</a> 
+                </div>
+        </div>
+    </body>
+</html>

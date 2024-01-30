@@ -1,0 +1,43 @@
+<!-- profiles/templates/home.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Welcome, {{ user.username }}!</h2>
+  <div class="col-md-6 col-sm-12">
+    <div class="text-right">
+      <a type="button" class="btn btn-primary" href="{% url 'update_profile' %}">
+        <i class="fa fa-edit"></i> Edit Profile
+      </a>
+    </div>
+    <div class="clear">&nbsp;</div>
+    <table class="table">
+        <tr>
+          <th>First Name</th>
+          <td>{{ user.first_name }}</td>
+        </tr>
+        <tr>
+          <th>Last Name</th>
+          <td>{{ user.last_name }}</td>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <td>{{ user.address }}</td>
+        </tr>
+        <tr>
+          <th>Phone number</th>
+          <td>{{ user.phone_number }}</td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td>{{ user.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="text-right">
+      <!-- Delete Button with Icon -->
+      <a type="button" class="btn btn-danger" href="{% url 'delete_profile' %}" onclick="return confirm('Do you realy want to delete your profile?')">
+        <i class="fa fa-trash-o"></i> Delete Profile
+      </a>
+    </div>
+  </div>
+{% endblock %}
