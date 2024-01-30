@@ -15,7 +15,8 @@ This project aims to  build a CRUD application in a Django, that allows a user t
 
 ## Dependencies
 
-- d
+- Django==4.2.9
+- social-auth-app-django==5.4.0
 
 ## How to use locally
 
