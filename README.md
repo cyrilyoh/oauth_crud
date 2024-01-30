@@ -38,7 +38,7 @@ This project aims to  build a CRUD application in a Django, that allows a user t
 
 - **Login:**
     - Login page
-    <!-- ![Screenshot 1](https://github.com/) -->
+    ![Screenshot 1](https://github.com/cyrilyoh/oauth_crud/blob/main/screenshots/1.png)
 
 - **Home:**
     - page
