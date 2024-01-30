@@ -37,11 +37,13 @@ This project aims to  build a CRUD application in a Django, that allows a user t
 ## Application Screenshots
 
 - **Login:**
-    - Login page
-    ![Screenshot 1](https://github.com/cyrilyoh/oauth_crud/blob/main/screenshots/1.png)
+    - Clicking the login button will lead to the GitHub login page. After successfully logging in with GitHub credentials, the user's profile will be presented.
+    ![Login](https://github.com/cyrilyoh/oauth_crud/blob/main/screenshots/1.png)
 
-- **Home:**
-    - page
+- **Home (View/Delete profile, Logout):**
+    - Here, the profile of the currently logged-in user is presented, initially appearing empty as the profile has not been created. Users can choose to update or delete the profile, and a logout button is provided.
+    ![Login](https://github.com/cyrilyoh/oauth_crud/blob/main/screenshots/2.png)
 
 - **Update profile:**
-    - page
+    - The current details of the user's profile are presented within a form, allowing the user to make updates. Additionally, a cancel button is provided for navigation back.
+    ![Login](https://github.com/cyrilyoh/oauth_crud/blob/main/screenshots/3.png)
